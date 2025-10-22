@@ -4,41 +4,43 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-800">
       {/* Header */}
-      <header className="flex justify-between items-center px-10 py-6 bg-transparent absolute top-0 w-full z-10">
-        <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">AI</div>
-          <h1 className="text-2xl font-semibold text-blue-700">Listo Qasa</h1>
-        </div>
-        <nav className="space-x-8 text-blue-700">
-          <a href="#" className="hover:text-blue-500">Buy</a>
-          <a href="#" className="hover:text-blue-500">Sell</a>
-          <a href="#" className="hover:text-blue-500">Rent</a>
-          <a href="#" className="hover:text-blue-500">Agents</a>
-          <a href="#" className="hover:text-blue-500">Developers</a>
-          <a href="#" className="hover:text-blue-500">A.I CRM</a>
+      <header className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md shadow-sm z-50 flex items-center justify-between px-10 py-4">
+        <h1 className="text-2xl font-bold text-blue-600 flex items-center">
+          🏠 <span className="ml-2">Listo Qasa</span>
+        </h1>
+        <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
+          <a href="#" className="hover:text-blue-600">Buy</a>
+          <a href="#" className="hover:text-blue-600">Sell</a>
+          <a href="#" className="hover:text-blue-600">Rent</a>
+          <a href="#" className="hover:text-blue-600">A.I CRM</a>
+          <a
+            href="#"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Sign In
+          </a>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="relative flex flex-col justify-center items-center text-center px-6 pt-40 pb-32">
-        <img
-          src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1920&q=80"
-          alt="Modern home"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-        />
-        <div className="relative z-10 max-w-3xl">
-          <h2 className="text-5xl font-bold text-blue-800 mb-6">
-            Your AI-Powered Real Estate Workspace Awaits
+      <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left pt-32 pb-20 px-10">
+        <div className="max-w-xl">
+          <h2 className="text-4xl md:text-6xl font-bold text-blue-700 leading-tight mb-6">
+            Your A.I-Powered Real Estate Platform
           </h2>
-          <p className="text-lg text-gray-700 mb-10">
-            Automate listings, leads, and closings with Listo Qasa’s intelligent platform.
+          <p className="text-gray-600 text-lg mb-8">
+            Buy, sell, rent, and manage properties smarter — powered by real estate A.I.
           </p>
-          <a
-            href="/dashboard"
-            className="px-8 py-4 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition"
-          >
-            Get Started
-          </a>
+          <button className="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition">
+            Post Your Property
+          </button>
+        </div>
+        <div className="mt-10 md:mt-0 md:ml-10">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/11/29/09/32/architecture-1868667_1280.jpg"
+            alt="Modern house"
+            className="rounded-2xl shadow-lg w-[500px] max-w-full"
+          />
         </div>
       </section>
     </div>
