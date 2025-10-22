@@ -122,6 +122,36 @@ export default function Landing() {
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Zillow_logo.svg" alt="Zillow" className="h-10" />
         </div>
       </section>
+
+      {/* Testimonials & Success Stories */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-24 px-10 text-center">
+        <h3 className="text-3xl font-bold text-blue-700 mb-12">
+          Testimonials & Success Stories
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+            <p className="italic text-gray-600 mb-4">
+              “Listo Qasa transformed how our team handles listings — we’ve doubled
+              our closing rate in just 3 months.”
+            </p>
+            <h4 className="font-semibold text-blue-700">— María Santos, Real Estate Agent</h4>
+          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+            <p className="italic text-gray-600 mb-4">
+              “The A.I. CRM automation saves me hours every week. It’s like having
+              a personal assistant built into the platform.”
+            </p>
+            <h4 className="font-semibold text-blue-700">— John Pérez, Broker Owner</h4>
+          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+            <p className="italic text-gray-600 mb-4">
+              “The analytics are insane — finally, real visibility into performance,
+              leads, and marketing returns.”
+            </p>
+            <h4 className="font-semibold text-blue-700">— Ana López, Property Developer</h4>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
