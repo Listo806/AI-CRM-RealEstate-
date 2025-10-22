@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export default function Landing() {
@@ -74,6 +75,40 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      {/* Analytics Wow Section */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-24 px-10 text-center">
+        <h3 className="text-3xl font-bold text-blue-700 mb-6">
+          All-in-One Platform. Analytics That Wow.
+        </h3>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          See everything that matters in one powerful dashboard — leads, listings,
+          and performance metrics — all updated in real time with A.I-driven insights.
+        </p>
+
+        <div className="flex flex-col items-center justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
+            alt="Analytics Dashboard"
+            className="rounded-2xl shadow-2xl w-[900px] max-w-full"
+          />
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h4 className="text-blue-700 font-semibold text-lg mb-2">+124%</h4>
+              <p className="text-gray-500 text-sm">Lead Engagement Increase</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h4 className="text-blue-700 font-semibold text-lg mb-2">98.6%</h4>
+              <p className="text-gray-500 text-sm">Platform Uptime</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h4 className="text-blue-700 font-semibold text-lg mb-2">8.2k</h4>
+              <p className="text-gray-500 text-sm">AI Insights Generated</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
+
