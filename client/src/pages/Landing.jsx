@@ -152,6 +152,34 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      {/* Key Metrics & Platform Stats */}
+      <section className="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-24 px-10 text-center">
+        <h3 className="text-3xl font-bold mb-12">Key Metrics & Platform Stats</h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-md">
+            <h4 className="text-4xl font-bold">8,200+</h4>
+            <p className="text-blue-100 mt-2">Active Listings</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-md">
+            <h4 className="text-4xl font-bold">2,500+</h4>
+            <p className="text-blue-100 mt-2">Real Estate Agents</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-md">
+            <h4 className="text-4xl font-bold">98.9%</h4>
+            <p className="text-blue-100 mt-2">System Uptime</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-md">
+            <h4 className="text-4xl font-bold">120M+</h4>
+            <p className="text-blue-100 mt-2">AI Insights Generated</p>
+          </div>
+        </div>
+
+        <p className="text-blue-100 text-lg mt-12 max-w-2xl mx-auto">
+          Powering the future of real estate with reliability, scalability, and unmatched A.I. performance.
+        </p>
+      </section>
     </div>
   );
 }
