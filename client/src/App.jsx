@@ -1,10 +1,6 @@
 import React from "react";
-import Dashboard from "./Dashboard.jsx";
+import Landing from "./pages/Landing.jsx";
 
 export default function App() {
-  return (
-    <div>
-      <Dashboard />
-    </div>
-  );
+  return <Landing />;
 }
