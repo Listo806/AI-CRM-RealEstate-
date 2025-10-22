@@ -37,10 +37,41 @@ export default function Landing() {
         </div>
         <div className="mt-10 md:mt-0 md:ml-10">
           <img
-            src="https://cdn.pixabay.com/photo/2016/11/29/09/32/architecture-1868667_1280.jpg"
+            src="https://images.unsplash.com/photo-1600607687920-4e2c3b3479c3?auto=format&fit=crop&w=1200&q=80"
             alt="Modern house"
             className="rounded-2xl shadow-lg w-[500px] max-w-full"
           />
+        </div>
+      </section>
+
+      {/* What We Do Section */}
+      <section className="bg-white py-24 px-10 text-center">
+        <h3 className="text-3xl font-bold text-blue-700 mb-10">What We Do</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="bg-blue-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">AI Property Matchmaker</h4>
+            <p className="text-gray-600">
+              Instantly match buyers with their dream homes using predictive A.I.
+            </p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">Smart CRM Automation</h4>
+            <p className="text-gray-600">
+              Automate follow-ups, manage leads, and close deals faster.
+            </p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">Instant Listing Uploads</h4>
+            <p className="text-gray-600">
+              Post your property everywhere in seconds with one click.
+            </p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">Seamless Team Collaboration</h4>
+            <p className="text-gray-600">
+              Keep your agents connected and productive with A.I-powered insights.
+            </p>
+          </div>
         </div>
       </section>
     </div>
