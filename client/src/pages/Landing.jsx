@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export default function Landing() {
@@ -108,7 +107,21 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      {/* Trusted Partners Section */}
+      <section className="bg-white py-24 px-10 text-center">
+        <h3 className="text-3xl font-bold text-blue-700 mb-10">
+          Trusted by Agents, Developers, and Investors Worldwide
+        </h3>
+        <div className="flex flex-wrap justify-center items-center gap-10 opacity-80">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb" className="h-10" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Remax_logo.svg" alt="Remax" className="h-10" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Keller_Williams_Realty_logo.svg" alt="Keller Williams" className="h-10" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Coldwell_Banker_logo.svg" alt="Coldwell Banker" className="h-10" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/EXP_Realty_logo.svg" alt="EXP Realty" className="h-10" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Zillow_logo.svg" alt="Zillow" className="h-10" />
+        </div>
+      </section>
     </div>
   );
 }
-
