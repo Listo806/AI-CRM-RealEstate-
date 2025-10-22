@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Phase10LiveTimelineWithAlerts from "./pages/Phase10LiveTimelineWithAlerts.jsx";
+import App from "./App.jsx"; // 👈 this will be your full platform layout
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Phase10LiveTimelineWithAlerts />
+    <App />
   </React.StrictMode>
 );
