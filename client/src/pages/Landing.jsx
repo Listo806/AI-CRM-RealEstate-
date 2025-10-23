@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export default function Landing() {
@@ -8,7 +7,12 @@ export default function Landing() {
       <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
           <h1 className="text-2xl font-bold text-blue-600 flex items-center">
-            🏠 <span className="ml-2">Listo Qasa</span>
+            <img
+              src="/images/logo-mark-white.svg"
+              alt="Listo Qasa"
+              className="h-8 w-8 mr-2"
+            />
+            <span>Listo Qasa</span>
           </h1>
           <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
             <a href="#" className="hover:text-blue-600">Buy</a>
@@ -41,9 +45,10 @@ export default function Landing() {
           </div>
           <div className="flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1600607687920-4e2c3b3479c3?auto=format&fit=crop&w=1200&q=80"
+              src="/images/hero-home-1920.jpg"
               alt="Modern house"
               className="rounded-2xl shadow-xl w-full max-w-md object-cover"
+              loading="eager"
             />
           </div>
         </div>
@@ -80,9 +85,10 @@ export default function Landing() {
           </p>
           <div className="flex flex-col items-center">
             <img
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
+              src="/images/analytics-preview-1600.jpg"
               alt="Analytics Dashboard"
               className="rounded-2xl shadow-2xl w-full max-w-4xl"
+              loading="lazy"
             />
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl">
               {[
@@ -108,14 +114,14 @@ export default function Landing() {
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-10 opacity-80">
             {[
-              "https://upload.wikimedia.org/wikipedia/commons/a/a9/Airbnb_Logo_B%C3%A9lo.svg",
-              "https://upload.wikimedia.org/wikipedia/commons/5/5f/Remax_logo.svg",
-              "https://upload.wikimedia.org/wikipedia/commons/6/6e/Keller_Williams_Realty_logo.svg",
-              "https://upload.wikimedia.org/wikipedia/commons/1/1e/Coldwell_Banker_logo.svg",
-              "https://upload.wikimedia.org/wikipedia/commons/3/3e/EXP_Realty_logo.svg",
-              "https://upload.wikimedia.org/wikipedia/commons/f/f7/Zillow_logo.svg"
+              "partner-airbnb.svg",
+              "partner-remax.svg",
+              "partner-kw.svg",
+              "partner-coldwell.svg",
+              "partner-exp.svg",
+              "partner-zillow.svg"
             ].map((src, i) => (
-              <img key={i} src={src} alt="Partner Logo" className="h-10" />
+              <img key={i} src={`/images/${src}`} alt="Partner Logo" className="h-10" loading="lazy" />
             ))}
           </div>
         </div>
@@ -184,4 +190,3 @@ export default function Landing() {
     </div>
   );
 }
-
