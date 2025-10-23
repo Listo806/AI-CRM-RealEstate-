@@ -1,22 +1,23 @@
+
 import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-700 text-white py-10 text-center">
-      <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-xl font-semibold mb-3">Listo Qasa</h3>
-        <p className="text-blue-100 mb-6">
-          Powering the future of real estate with A.I-driven innovation.
-        </p>
-        <div className="flex justify-center space-x-6 mb-6">
-          <a href="#" className="hover:text-blue-200">About</a>
-          <a href="#" className="hover:text-blue-200">Contact</a>
-          <a href="#" className="hover:text-blue-200">Privacy Policy</a>
-          <a href="#" className="hover:text-blue-200">Terms</a>
-        </div>
-        <p className="text-sm text-blue-200">
-          © {new Date().getFullYear()} Listo Qasa. All rights reserved.
-        </p>
+    <footer className="bg-white border-t border-gray-100 py-6 mt-20 text-center text-gray-500 text-sm">
+      <p>
+        © {new Date().getFullYear()} <span className="text-blue-600 font-semibold">Listo Qasa</span>.  
+        All rights reserved.
+      </p>
+      <div className="flex justify-center gap-6 mt-3 text-gray-400">
+        <a href="mailto:support@listoqasa.com" className="hover:text-blue-600">
+          📧 support@listoqasa.com
+        </a>
+        <a href="https://www.instagram.com/listoqasa" className="hover:text-blue-600">
+          📸 Instagram
+        </a>
+        <a href="https://www.tiktok.com/@listoqasa" className="hover:text-blue-600">
+          🎥 TikTok
+        </a>
       </div>
     </footer>
   );
