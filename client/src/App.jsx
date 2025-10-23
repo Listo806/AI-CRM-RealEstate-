@@ -1,17 +1,22 @@
 // client/src/App.jsx
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Landing from "./pages/Landing";
+import Dashboard from "./pages/Dashboard";
+import SignIn from "./pages/SignIn";
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      {/* Your page sections go here */}
       <main>
-        {/* example anchors for the header links */}
-        <section id="features" style={{padding: "80px 20px"}}>Features section</section>
-        <section id="pricing" style={{padding: "80px 20px"}}>Pricing section</section>
-        <section id="get-started" style={{padding: "80px 20px"}}>Get Started section</section>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/signin" element={<SignIn />} />
+        </Routes>
       </main>
-    </>
+    </BrowserRouter>
   );
 }
