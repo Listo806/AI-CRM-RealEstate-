@@ -1,25 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Global styling for Listo Qasa white-tech aesthetic */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  color: #1e293b;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+/* Header basics */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eef1f4;
 }
 
-/* Scrollbar refinement for desktop */
-::-webkit-scrollbar {
-  width: 8px;
+.site-header .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 8px;
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #0f172a; /* slate-900 */
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+
+.brand img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.nav a.cta {
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #2563eb;   /* blue-600 */
+  color: #fff;
 }
