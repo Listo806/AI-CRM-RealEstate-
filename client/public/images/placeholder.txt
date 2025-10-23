@@ -1,3 +1,0 @@
-This is a placeholder file to allow committing the /images directory.
-Actual hero and layout images (hero-house.png, analytics-dashboard.png, etc.)
-will be added here from the ListoQasa_Official_Images.zip pack.
