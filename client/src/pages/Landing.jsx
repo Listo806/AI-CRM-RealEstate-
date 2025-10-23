@@ -180,6 +180,43 @@ export default function Landing() {
           Powering the future of real estate with reliability, scalability, and unmatched A.I. performance.
         </p>
       </section>
+
+      {/* How It Works Section */}
+      <section className="bg-white py-24 px-10 text-center">
+        <h3 className="text-3xl font-bold text-blue-700 mb-12">How It Works</h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          <div className="bg-blue-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div className="text-5xl mb-4">📝</div>
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">1. Sign Up & Connect</h4>
+            <p className="text-gray-600">
+              Create your account, connect your listings, and set your goals in under 2 minutes.
+            </p>
+          </div>
+
+          <div className="bg-blue-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div className="text-5xl mb-4">🤖</div>
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">2. Let the A.I. Work</h4>
+            <p className="text-gray-600">
+              Our smart engine organizes leads, predicts conversions, and automates your follow-ups.
+            </p>
+          </div>
+
+          <div className="bg-blue-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div className="text-5xl mb-4">💼</div>
+            <h4 className="text-xl font-semibold text-blue-600 mb-3">3. Close More Deals</h4>
+            <p className="text-gray-600">
+              Get instant insights, manage your team efficiently, and close faster — powered by Listo Qasa A.I.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <button className="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg hover:bg-blue-700 transition">
+            Get Started Now
+          </button>
+        </div>
+      </section>
     </div>
   );
 }
