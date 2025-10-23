@@ -1,15 +1,15 @@
 import React from "react";
-import HeaderBar from "./components/HeaderBar.jsx";
+import Header from "../components/Header.jsx"; // ✅ fixed path
 
 export default function Dashboard() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800">
       {/* Top Header */}
-      <HeaderBar />
+      <Header />
 
-      <div className="flex flex-1">
+      <div className="flex flex-1 pt-20">
         {/* Sidebar */}
-        <aside className="w-64 bg-white shadow-lg p-6">
+        <aside className="w-64 bg-white shadow-lg p-6 fixed top-20 bottom-0">
           <h2 className="text-2xl font-bold text-blue-600 mb-8">Listo Qasa</h2>
           <nav className="space-y-4">
             <a href="#" className="block hover:text-blue-600">🏠 Dashboard</a>
@@ -21,13 +21,13 @@ export default function Dashboard() {
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 p-10">
+        <main className="flex-1 ml-64 p-10">
           <header className="mb-8">
             <h1 className="text-3xl font-semibold text-blue-700">
               Welcome back, Agent Joe 👋
             </h1>
             <p className="text-gray-500">
-              Your A.I-powered real-estate dashboard
+              Your A.I-powered real estate dashboard
             </p>
           </header>
 
@@ -53,9 +53,9 @@ export default function Dashboard() {
               Recent Activity
             </h2>
             <ul className="bg-white rounded-2xl shadow divide-y divide-gray-100">
-              <li className="p-4">🏡 New property listed by Maria Santos</li>
-              <li className="p-4">🤝 Lead assigned to John Perez</li>
-              <li className="p-4">💬 Client message received from Ana Lopez</li>
+              <li className="p-4">🏡 New property listed by María Santos</li>
+              <li className="p-4">🤝 Lead assigned to John Pérez</li>
+              <li className="p-4">💬 Client message received from Ana López</li>
               <li className="p-4">📈 Weekly report generated automatically</li>
             </ul>
           </section>
