@@ -29,28 +29,23 @@ export default function Landing() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="pt-28 md:pt-40 pb-20 bg-gradient-to-b from-white to-blue-50">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-10">
-          <div>
-            <h2 className="text-4xl md:text-6xl font-bold text-blue-700 leading-tight mb-6">
-              Your A.I-Powered Real Estate Platform
-            </h2>
-            <p className="text-gray-600 text-lg mb-8">
-              Buy, sell, rent, and manage properties smarter — powered by real-estate A.I.
-            </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition">
-              Post Your Property
-            </button>
-          </div>
-          <div className="flex justify-center">
-            <img
-              src="/images/hero-home-1920.jpg"
-              alt="Modern house"
-              className="rounded-2xl shadow-xl w-full max-w-md object-cover"
-              loading="eager"
-            />
-          </div>
+      {/* Hero Section */}
+      <section
+        className="relative w-full h-[90vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-blue-900/50 backdrop-blur-sm"></div>
+
+        <div className="relative z-10 max-w-3xl px-6">
+          <h2 className="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
+            Your A.I-Powered Real Estate Platform
+          </h2>
+          <p className="text-lg md:text-2xl mb-8 text-blue-100 drop-shadow-md">
+            Buy, sell, rent, and manage properties smarter — powered by real-estate A.I.
+          </p>
+          <button className="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg hover:bg-blue-700 transition shadow-lg">
+            Post Your Property
+          </button>
         </div>
       </section>
 
